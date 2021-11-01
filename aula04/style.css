@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgba(143, 201, 182, 0.678);
+}
+
+h1 {
+    text-align: center;
+    color: rgb(15, 46, 15);
+    border-color: yellow;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 10px 10px black;
+}
+
+div {
+    background-color: blue;
+    color: white;
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    margin: 10px;
+    outline-color: black;
+    border: 1px solid black;
+    box-shadow: 10px 10px 10px black;
+}
+
+div:hover {
+    background-color: yellow;
+    color: black;
+}
+
+div button {
+    
+}

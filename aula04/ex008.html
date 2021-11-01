@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <style>
+        body {
+            background-color: rgb(95, 150, 150)
+        }
+        h1 {
+            background-color: #ccc;
+            width: 450px;
+
+        }
+        input#b1:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Brasileiro ou Estrangeiro</h1>
+    Nação à qual pertence: <input type="text" name="nacao" id="nacao">
+    <input type="button" value="verificar" name="b1" id="b1" onclick="Nationality()">
+    <div id="res"></div>
+    <script>
+        function Nationality() {
+            var nç = window.document.getElementById ("nacao");
+            var res = window.document.querySelector ('div#res')
+            var nation = String (nç.value);
+            res.innerHTML = `Seu país é <strong>${nation}</strong>.`;
+            if (nation == "Brasil") {
+                res.innerHTML += ` Você é brasileiro!`;
+            } else {
+                res.innerHTML += " Você é estrangeiro!";
+            }
+    }
+    </script>
+</body>
+</html>
